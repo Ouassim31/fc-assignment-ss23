@@ -4,6 +4,8 @@ import time
 
 while True:
     closed = True
+    # Continuously check if the CSV file is currently being accessed by another file (client2.py)
+    # Repeat this action until the file becomes available for modification
     while closed:
         try:
             with open('sensor_data2.csv', 'a', newline='') as file:
