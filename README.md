@@ -29,7 +29,15 @@ pip install pyzmq
 client
 
 ## Instructions
-The server should run on a cloud component. Our server runs on GCE. If you run your own server on another cloud component you should change the _SERVER_ENDPOINT variable_ in the client1.py and client2.py files.
+The server should run on a cloud component. Our server runs on GCE with the following configurations :
+* Machine type : e2-medium
+* CPU platform : Intel Broadwell
+* Architecture :  x86/64
+* Operation system :  Ubuntu 20.04.6 LTS
+* Firewall requiered rule : allow tcp:5554
+* External IP address : 34.141.3.45
+  
+If you run your own server on another cloud component you should change the _SERVER_ENDPOINT variable_ in the client1.py and client2.py files.
 
 1. Start the data generation:
 ```bash
