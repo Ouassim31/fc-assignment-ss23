@@ -46,3 +46,4 @@ py client2.py
 3. Make test with the message delivery by stopping the clients/server
 ## License
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
